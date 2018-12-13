@@ -11,5 +11,6 @@ describe 'when a user visits /login' do
 
     expect(current_path).to eq(user_path(user))
     expect(page).to have_content(user.name)
+    save_and_open_page
   end
 end
